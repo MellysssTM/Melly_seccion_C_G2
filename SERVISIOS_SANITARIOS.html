@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sanitarios del Hotel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #FAF5EF; /* Beige claro */
+      color: #3E2F1C; /* Gris oscuro café */
+    }
+    header {
+      background-color: #F2E3C6; /* Beige claro */
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(75, 46, 11, 0.2); /* sombra café oscura */
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #4B2E0B; /* café oscuro */
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #A97452; /* café medio */
+    }
+    .banner {
+      background: linear-gradient(135deg, #A97452, #F2E3C6);
+      padding: 4rem 2rem;
+      text-align: center;
+      color: #FAF5EF;
+    }
+    .banner h1 {
+      font-size: 2.5rem;
+      color: #4B2E0B;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    }
+    .section {
+      padding: 3rem 2rem;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: #FAF5EF; /* blanco hueso */
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(75, 46, 11, 0.15);
+      border: 1px solid #A97452;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 2px solid #A97452;
+    }
+    .card-content {
+      padding: 1rem;
+      color: #4B2E0B;
+    }
+    .card-content h3 {
+      color: #4B2E0B;
+    }
+    .btn {
+      display: block;
+      background: #4B2E0B; /* café oscuro */
+      color: #FAF5EF; /* blanco hueso */
+      padding: 0.75rem;
+      text-align: center;
+      margin: 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background: #A97452; /* café medio */
+    }
+    .beneficios {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      color: #4B2E0B;
+    }
+    .beneficio {
+      text-align: center;
+      width: 200px;
+    }
+    .beneficio img {
+      width: 50px;
+      margin-bottom: 0.5rem;
+      filter: sepia(60%) saturate(400%) brightness(90%);
+    }
+    footer {
+      background-color: #4B2E0B; /* café oscuro */
+      color: #FAF5EF; /* blanco hueso */
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><img src="img/logo.jpg" alt="Logo" style="height: 100px;" /></div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Detalles de los productos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a href="#contacto" class="btn" style="margin: 0; padding: 0.5rem 1rem;">Contáctenos</a>
+  </header>
+
+  <section class="banner" id="inicio">
+    <h1>Descubra la variedad de sanitarios que ofrecemos</h1>
+  </section>
+
+  <section class="section" id="productos">
+    <h2>Tipos de Sanitarios</h2>
+    <div class="productos">
+      <div class="card">
+        <img src="img/ESTANDAR.png" alt="Sanitario Estándar" />
+        <div class="card-content">
+          <h3>Sanitario Estándar</h3>
+          <p>Modelo básico con excelente relación calidad-precio</p>
+          <p>
+            Sistema de doble descarga para ahorro de agua y diseño compacto
+            ideal para habitaciones estándar.
+          </p>
+          <a href="#" class="btn" style="margin-top: 1.5rem;">Más información</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/PREMIUM.png" alt="Sanitario Premium" />
+        <div class="card-content">
+          <h3>Sanitario Premium</h3>
+          <p>Diseño elegante con tecnología avanzada</p>
+          <p>
+            Acabado premium con sistema automático de apertura y cierre, ideal
+            para suites.
+          </p>
+          <a href="#" class="btn">Más información</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/ACCESIBLE.png" alt="Sanitario Accesible" />
+        <div class="card-content">
+          <h3>Sanitario Accesible</h3>
+          <p>Diseñado para cumplir normativas de accesibilidad</p>
+          <p>Altura especial y barras de apoyo incluidas para máxima accesibilidad.</p>
+          <a href="#" class="btn" style="margin-top: 1.5rem;">Más información</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/ECOLOGICO.png" alt="Sanitario Ecológico" />
+        <div class="card-content">
+          <h3>Sanitario Ecológico</h3>
+          <p>Máxima eficiencia en consumo de agua</p>
+          <p>Sistema de bajo consumo con certificación ecológica.</p>
+          <a href="#" class="btn" style="margin-top: 1.5rem;">Más información</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/INCLUSIVO.jpg" alt="Sanitario para Discapacidades Físicas" />
+        <div class="card-content">
+          <h3>Sanitario para Discapacidades Físicas</h3>
+          <p>
+            Sanitarios accesibles para personas con movilidad reducida, cumpliendo
+            con las normativas vigentes.
+          </p>
+          <p>
+            Nuestros diseños inclusivos garantizan la comodidad y seguridad de
+            todos sus huéspedes.
+          </p>
+          <a href="#" class="btn">Más información</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Beneficios</h2>
+    <div class="beneficios">
+      <div class="beneficio">
+        <img src="img/AHORRO.png" alt="Ahorro de agua" />
+        <p>Tecnología de ahorro de agua</p>
+      </div>
+      <div class="beneficio">
+        <img src="img/DISEÑO.png" alt="Diseño ergonómico" />
+        <p>Diseño ergonómico y confortable</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contacto">
+    <h2>Acerca de Nosotros</h2>
+    <p>
+      En Hotel Oasis, nos dedicamos a ofrecer una experiencia cómoda, segura y
+      sostenible a nuestros huéspedes. Nuestro compromiso con la innovación nos
+      ha llevado a renovar nuestras instalaciones con soluciones sanitarias de
+      última generación que combinan eficiencia, elegancia y accesibilidad.
+    </p>
+    <p>
+      Contamos con un equipo apasionado por el servicio al cliente y trabajamos
+      día a día para asegurar que cada detalle de su estancia sea excepcional.
+      Desde sanitarios ecológicos hasta instalaciones adaptadas para todos,
+      somos su mejor opción para una estadía placentera y moderna.
+    </p>
+    <p><strong>Beneficios de elegirnos:</strong></p>
+    <ul>
+      <li>Instalaciones modernas y adaptadas</li>
+      <li>Compromiso con la sostenibilidad</li>
+      <li>Accesibilidad para todas las personas</li>
+      <li>Atención personalizada y servicio 24/7</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hotel Oasis. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
